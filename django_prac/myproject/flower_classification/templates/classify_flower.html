@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flower Classification</title>
+</head>
+<body>
+    <h2>Upload an image of a flower</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image" accept="image/*" required><br><br>
+        <input type="submit" value="Classify">
+    </form>
+</body>
+</html>
